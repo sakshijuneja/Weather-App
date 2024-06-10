@@ -24,6 +24,7 @@ export default function CurrentWeather({ currentWeatherData, isDarkMode }) {
 
   const currentDate = new Date();
   const offset = currentWeatherData.timezone; // assuming timezone offset is in seconds
+  const weatherIcon = require(`../assests/icons/${currentWeatherData.weather[0].icon}.png`);
 
   return (
     <div className={`current-weather ${isDarkMode ? "dark-mode" : "light-mode"}`}>
@@ -40,7 +41,7 @@ export default function CurrentWeather({ currentWeatherData, isDarkMode }) {
           <img
             alt="weather"
             className="current-city-weather-icon"
-            src={`/icons/${currentWeatherData.weather[0].icon}.png`}
+            src={weatherIcon}
           />
         </div>
         <div className="current-city-weather-info-details">
