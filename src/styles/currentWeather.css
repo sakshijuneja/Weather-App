@@ -1,0 +1,163 @@
+@media only screen and (max-width: 770px) {
+  .current-weather {
+    color: black;
+    height: 100%;
+    transition: background-color 0.3s, color 0.3s;
+    /* background-color: aquamarine; */
+  }
+  .current-weather.dark-mode {
+    color: white;
+  }
+  /* current-city-details-top */
+  .current-city-details-top {
+    height: 10% !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    /* justify-content: space-between; */
+    /* background-color: green; */
+    p {
+      margin: 0 !important;
+      font-size: 10px;
+    }
+  }
+
+  .current-city-date {
+    margin-bottom: 0;
+  }
+  .current-city-time {
+    margin: 0;
+  }
+
+  /* current-city-weather */
+
+  .current-city-weather {
+    width: 100%;
+    height: 90% !important;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px !important;
+  }
+
+  .current-city-weather-info-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    h1,
+    p {
+      margin: 0 !important;
+      font-size: 12px !important;
+    }
+    h1 {
+      font-size: 30px !important;
+    }
+  }
+
+  .current-city-weather-icon {
+    img {
+      height: 100px !important;
+    }
+  }
+
+  .current-city-weather-wind-speed-container,
+  .current-city-weather-humidity-container {
+    display: flex;
+    gap: 10px;
+  }
+
+  .current-city-weather-humidity-n-wind-speed {
+    display: flex;
+    gap: 20px;
+  }
+
+  .current-weather.dark-mode {
+    color: white;
+  }
+
+  .current-weather.dark-mode .current-city-weather-icon img {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
+
+.current-weather {
+  color: black;
+  height: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+.current-weather.dark-mode {
+  color: white;
+}
+/* current-city-details-top */
+.current-city-details-top {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: green; */
+}
+
+.current-city-date {
+  margin-bottom: 0;
+}
+.current-city-time {
+  margin: 0;
+}
+
+/* current-city-weather */
+
+.current-city-weather {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.current-city-weather-info-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  h1,
+  p {
+    margin: 0;
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+}
+
+.current-city-weather-icon {
+  img {
+    height: 200px;
+  }
+}
+
+.current-city-weather-wind-speed-container,
+.current-city-weather-humidity-container {
+  display: flex;
+  gap: 10px;
+}
+
+.current-city-weather-humidity-n-wind-speed {
+  display: flex;
+  gap: 20px;
+}
+
+.current-weather.dark-mode {
+  color: white;
+}
+
+.current-weather.dark-mode .current-city-weather-icon img {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+}
